@@ -1,0 +1,22 @@
+.img-autoHeight {
+  width: 100%;
+  margin: auto;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+  &::before {
+    content: "";
+    padding-top: 73.5%;
+    float: left;
+  }
+  img {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+  }
+
+}
